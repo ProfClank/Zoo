@@ -12,9 +12,9 @@ namespace Zoo
         {
             List<string> userOptions = new List<string>
             {
-                "Look",
-                "Build",
-                "Add Animal"
+                "1) Look",
+                "2) Build",
+                "3) Animals"
             };
 
             userOptions.ForEach(Console.WriteLine);

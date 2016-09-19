@@ -10,7 +10,11 @@ namespace Zoo
     {
         public static void userInput()
         {
-            Console.ReadLine();
+            if (3)
+                Console.WriteLine();
+            else
+                Console.WriteLine("Action not found");
+
         }
     }
 }
