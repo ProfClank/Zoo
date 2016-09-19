@@ -10,8 +10,10 @@ namespace Zoo
     {
         static void Main(string[] args)
         {
-            Console.Write("This is a test");
-            Console.ReadKey();
+            Welcome_Message.Welcome();
+            userOptions.userList();
+            User_Input.userInput();
+            Console.Read();
         }
     }
 }
