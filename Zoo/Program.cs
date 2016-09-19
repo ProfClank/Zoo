@@ -10,9 +10,9 @@ namespace Zoo
     {
         static void Main(string[] args)
         {
-            Welcome_Message.Welcome();
+            welcomeMessage.Welcome();
             userOptions.userList();
-            User_Input.userInput();
+            userInput.userInput();
             Console.Read();
         }
     }

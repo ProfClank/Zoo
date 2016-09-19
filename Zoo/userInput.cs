@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Zoo
 {
-    class User_Input
+    class userInput
     {
         public static void userInput()
         {

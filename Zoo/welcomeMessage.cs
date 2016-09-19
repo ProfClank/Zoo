@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Zoo
 {
-    class Welcome_Message
+    class welcomeMessage
     {
         public static void Welcome()
         {
