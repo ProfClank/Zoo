@@ -22,7 +22,7 @@ namespace Zoo
             new Animal {Name="Gorilla", Size="Medium", Environment="Forest", Age=10 },
             new Animal {Name="Giraffe", Size="Large", Environment="Savanna", Age=15 },
             new Animal {Name="Shark", Size="Medium", Environment="Water", Age=5 }
-            Console.WriteLine();
+            animals.ForEach(Print);
         };
     }
 }
