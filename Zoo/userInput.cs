@@ -1,20 +1,30 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Zoo
 {
-    class userInput
+    class UserInput
     {
-        public static void userInput()
+        public static void Input()
         {
-            if (3)
-                Console.WriteLine();
-            else
-                Console.WriteLine("Action not found");
+            string choice = Console.ReadLine();
 
+            switch (choice)
+            {
+                case "1":
+
+                    new AnimalList().PrintAnimals();
+
+                    break;
+
+                case "2":
+                    Console.ReadKey();
+
+                    break;
+
+                default:
+                    Console.WriteLine("Not Recognised");
+                    break;
+            }
         }
     }
 }

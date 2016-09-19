@@ -1,22 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Zoo
 {
-    class userOptions
+    class UserOptions
     {
         public static void userList()
         {
             List<string> userOptions = new List<string>
             {
-                "1) Look",
-                "2) Build",
-                "3) Animals"
+                "1) Animals",
+                "2) Exit"
             };
-
+            
             userOptions.ForEach(Console.WriteLine);
         }
     }

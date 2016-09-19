@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Zoo
 {
@@ -10,9 +6,9 @@ namespace Zoo
     {
         static void Main(string[] args)
         {
-            welcomeMessage.Welcome();
-            userOptions.userList();
-            userInput.userInput();
+            WelcomeMessage.Welcome();
+            UserOptions.userList();
+            UserInput.Input();
             Console.Read();
         }
     }
