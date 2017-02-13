@@ -16,6 +16,17 @@ namespace Zoo
 
     }
 
+    public class Mammal : Animal
+    {
+        public bool Monkey { get; set; }
+
+        public Mammal(string name, string size, string environment, int age, bool monkey)
+            : base(name, size, environment, age)
+        {
+            Monkey = monkey;
+        }
+    }
+
     public class Animal
     {
         public Animal()
@@ -44,9 +55,10 @@ namespace Zoo
         public List<Animal> Animals = new List<Animal>
         {
             new Animal("Gorilla","Medium", "Forest", 10),
-            new Animal() {Name="Giraffe", Size="Large", Environment="Savanna", Age=15 },
-            new Animal() {Name="Shark", Size="Medium", Environment="Water", Age=5 },
-            new Lion("Roary","Medium", "Savanna", 10, 100),
+            new Animal("Giraffe", "Large", "Savanna", 15),
+            new Animal("Shark", "Medium", "Water", 5),
+            new Lion("Lion","Medium", "Savanna", 10, 100),
+            new Mammal("Baboon", "Medium", "Forest", 3, true)
         };
 
         public void PrintAnimals()
@@ -59,10 +71,14 @@ namespace Zoo
                     var loudnessOfRoar = ((Lion)c).LoudnessOfRoar;
                 }
 
-                string details2 = String.Format("Name: {0}, Age: {1}", c.Name, c.Age);
-                string details = $"Name: {c.Name}, Size: {c.Size}";
+                string details = $"Name: {c.Name}, Size: {c.Size}, Environemnt: {c.Environment}, Age: {c.Age}";
 
-               Console.WriteLine(details);
+                Console.WriteLine(details);
+            }
+
+            {
+                UserOptions.userList();
+                UserInput.Input();
             }
         }
     }

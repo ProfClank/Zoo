@@ -8,23 +8,36 @@ namespace Zoo
         {
             string choice = Console.ReadLine();
 
-            switch (choice)
+            if (choice == "1")
             {
-                case "1":
-
-                    new AnimalList().PrintAnimals();
-
-                    break;
-
-                case "2":
-                    Console.ReadKey();
-
-                    break;
-
-                default:
-                    Console.WriteLine("Not Recognised");
-                    break;
+                new AnimalList().PrintAnimals();
+            } else if (choice == "2")
+            {
+                Console.ReadKey();
+            } else
+            {
+                Console.WriteLine("Not Recognised");
+                UserOptions.userList();
             }
+
+            //switch (choice)
+            //{
+            //    case "1":
+
+            //        new AnimalList().PrintAnimals();
+
+            //        break;
+
+            //    case "2":
+            //        Console.ReadKey();
+
+            //        break;
+
+            //    default:
+            //        Console.WriteLine("Not Recognised");
+            //        Input();
+            //        break;
+            //}
         }
     }
 }
